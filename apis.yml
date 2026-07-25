@@ -1,8 +1,27 @@
 aid: crowdcube
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/crowdcube.png
 name: crowdcube
-description: crowdcube is a company surfaced as a portfolio company of balderton-capital and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Crowdcube is a UK-based equity crowdfunding platform that lets everyday and professional
+  investors buy shares in early-stage and growth-stage private companies, and lets founders raise
+  capital directly from their community and the wider crowd. Founded in 2011 in Exeter by Darren
+  Westlake and Luke Lang, it is authorised and regulated by the UK Financial Conduct Authority (FCA)
+  and has helped hundreds of startups and scale-ups raise funding from a large base of retail
+  investors. The platform covers pitch discovery, investment processing, share issuance, nominee
+  shareholding, and a secondary-market cashout facility. Crowdcube surfaced in the API Evangelist
+  network as a portfolio company of Balderton Capital. It does not currently publish a public
+  developer API, SDKs, or developer portal; this profile captures its company identity and observable
+  domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/crowdcube/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Equity Crowdfunding
+- Investing
+- Fintech
+- Startups
+- Fundraising
+- United Kingdom
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/crowdcube-domain-security.yml
 - type: Website
   url: https://www.crowdcube.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
